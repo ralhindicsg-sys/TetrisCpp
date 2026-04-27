@@ -1,3 +1,10 @@
 Rami:200
 cheater:0
 ra:0
+fsa:0
+sfa:0
+fsad:0
+sfsa:0
+fs:0
+dfsaf:0
+sfas:0

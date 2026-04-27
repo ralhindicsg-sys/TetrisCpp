@@ -18,8 +18,8 @@ private:
     void MainMenu();
     void StartGame();
     void Loop();
-    void HandleInput();
     void Spawn();
     void ClearConsole();
     bool ShowGameOver();
+    void HandleInput(bool& running, bool& exitToMenu);
 };

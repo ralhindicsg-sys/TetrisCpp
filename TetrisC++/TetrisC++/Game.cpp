@@ -106,6 +106,7 @@ void Game::MainMenu()
             PlayerManager::ClearScores(); ClearConsole();
         }
         if (c == '6') {
+           
             return;
         }
     }
@@ -132,11 +133,13 @@ void Game::Spawn()
 
 void Game::Loop()
 {
+    bool running = true;
+    bool exitToMenu = false;
     auto last = std::chrono::steady_clock::now();
 
-    while (true)
+    while (running)
     {
-        HandleInput();
+        HandleInput(running, exitToMenu);
 
         auto now = std::chrono::steady_clock::now();
         int elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - last).count();
@@ -156,7 +159,7 @@ void Game::Loop()
 
                 Spawn();
                 if (board.Collision(current, x, y))
-                    break;
+                    running = false;
             }
             last = now;
         }
@@ -165,22 +168,29 @@ void Game::Loop()
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 
+    if (exitToMenu)
+    {
+        ClearConsole();
+        return;
+    }
+
     PlayerManager::SaveScore(score);
 
     bool restart = ShowGameOver();
 
     if (restart)
     {
-		ClearConsole();
+        ClearConsole();
         StartGame();
     }
     else
     {
-		ClearConsole();
-        MainMenu();
+        return;
     }
 }
-void Game::HandleInput()
+
+
+void Game::HandleInput(bool& running, bool& exitToMenu)
 {
     if (!_kbhit()) return;
 
@@ -211,8 +221,8 @@ void Game::HandleInput()
 
     if (key == 27) {
         PlayerManager::SaveScore(score);
-        ClearConsole();
-        MainMenu();
+        running = false;
+        exitToMenu = true;
     }
 }
 void Game::ClearConsole()
