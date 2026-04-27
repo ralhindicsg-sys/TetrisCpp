@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/C++_learningSheet/.vs
+/C++_learningSheet/C++_learningSheet/x64/Debug
+/C++_learningSheet/x64/Debug
