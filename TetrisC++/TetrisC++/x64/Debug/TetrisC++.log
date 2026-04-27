@@ -4,9 +4,9 @@ C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(142,21): warning C4244:
 C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(142,21): warning C4244:         [
 C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(142,21): warning C4244:             _Rep=__int64
 C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(142,21): warning C4244:         ]
-C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(263,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(268,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(273,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(279,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(291,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(264,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(269,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(274,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(280,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ramia\source\repos\TetrisC++\TetrisC++\Game.cpp(292,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   TetrisC++.vcxproj -> C:\Users\ramia\source\repos\TetrisC++\x64\Debug\TetrisC++.exe

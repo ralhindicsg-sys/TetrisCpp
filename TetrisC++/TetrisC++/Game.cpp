@@ -211,6 +211,7 @@ void Game::HandleInput()
 
     if (key == 27) {
         PlayerManager::SaveScore(score);
+        ClearConsole();
         MainMenu();
     }
 }
